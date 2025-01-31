@@ -8,5 +8,5 @@ Some of my published Articles & Write-Up
 
 ## Write-Up
 
-- [PwnMe 2025 - Author Solution - Crypto](./WriteUps/VendingMachine/Write_Up_Vending_Machine.pdf)
+- [PwnMe 2025 - Author Solution - Crypto](./WriteUps/VendingMachine/Write_Up_Vending_Machine.pdf) / [html version (better imo)](./WriteUps/VendingMachine/Write_Up_Vending_Machine.html)
 - [RealWorld 2023/24 - Crypto](./WriteUps/OKPROOF/WU.md)
