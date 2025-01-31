@@ -95,12 +95,18 @@ The `pairing` function is defined in `py_ecc`, and it is a function for pairing 
 ----
 
 Let $P, G, R$ be points over an elliptic curve named $E(\mathbb{F}_p)$. \
-Let $p, q, r$ be values from a Finite Field named $\mathbb{F}_p$. \
-\
-$P = G \cdot p$ \
-$Q = G \cdot q$ \
-$R = G \cdot r$ \
-\
+Let $p, q, r$ be values from a Finite Field named $\mathbb{F}_p$. 
+
+$$
+P = G \cdot p
+$$
+$$
+Q = G \cdot q
+$$
+$$
+R = G \cdot r
+$$
+
 Using the pairing function, we can verify that $p \cdot q = r$ by checking if $\text{pairing}(P, Q) = R$.
 
 ----
@@ -153,7 +159,8 @@ So `PK` is formed as `(PKC, PKCa)`. And since `LENGTH = 7` from the constants de
 
 $$
 PKC = [G_1, t \cdot G_1, t^2 \cdot G_1, t^3 \cdot G_1, t^4 \cdot G_1, t^5 \cdot G_1, t^6 \cdot G_1]
-\\
+$$
+$$
 PKCa = [a \cdot G_1, a \cdot t \cdot G_1, a \cdot t^2 \cdot G_1, a \cdot t^3 \cdot G_1, a \cdot t^4 \cdot G_1, a \cdot t^5 \cdot G_1, a \cdot t^6 \cdot G_1]
 $$
 
@@ -193,6 +200,7 @@ pairing(G2,PiC) == pairing(VKz,PiH)
 A quick reminder of a very interesting property of bilinearity:
 
 Let $F$ be the bilinear mapping: $\mathbb{R}^2 \to \mathbb{R}$, and let $A, B, \mu \in \mathbb{R}$. Then, 
+
 $$
 F(A, \mu \cdot B) = F(\mu \cdot A, B) = \mu \cdot F(A, B).
 $$
@@ -216,8 +224,12 @@ So we need to find `PiC` such that `PiC == (t-1)*(t-2)*(t-3)*(t-4) * PiH` and `a
 Let us observe that if `PiH = G1` then:
 
 $$
-\Rightarrow \quad PiC = (t-1)(t-2)(t-3)(t-4) \cdot G_1 \\
-\Rightarrow \quad PiC = (t^4 - 10t^3 + 35t^2 - 50t + 24) \cdot G_1   \\
+\Rightarrow \quad PiC = (t-1)(t-2)(t-3)(t-4) \cdot G_1
+$$
+$$
+\Rightarrow \quad PiC = (t^4 - 10t^3 + 35t^2 - 50t + 24) \cdot G_1
+$$
+$$
 \Rightarrow \quad PiC = t^4 \cdot G_1 - 10t^3 \cdot G_1 + 35t^2 \cdot G_1 - 50t \cdot G_1 + 24 \cdot G_1
 $$ 
 
@@ -243,8 +255,12 @@ Now that we have obtained a value for `PiC` and `PiH` we need `PiCa`. \
 We know that `PiCa` must be equal to `a * PiC` so:
 
 $$
-\Rightarrow \quad a \cdot PiC = a \cdot (t-1)(t-2)(t-3)(t-4) \cdot G_1 \\
-\Rightarrow \quad a \cdot PiC = a \cdot (t^4 - 10t^3 + 35t^2 - 50t + 24) \cdot G_1   \\
+\Rightarrow \quad a \cdot PiC = a \cdot (t-1)(t-2)(t-3)(t-4) \cdot G_1
+$$
+$$
+\Rightarrow \quad a \cdot PiC = a \cdot (t^4 - 10t^3 + 35t^2 - 50t + 24) \cdot G_1
+$$
+$$
 \Rightarrow \quad a \cdot PiC = a \cdot t^4 \cdot G_1 - a \cdot 10t^3 \cdot G_1 + a \cdot 35t^2 \cdot G_1 - a \cdot 50t \cdot G_1 + a \cdot 24 \cdot G_1
 $$
 
