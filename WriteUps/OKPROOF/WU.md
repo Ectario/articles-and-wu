@@ -205,6 +205,8 @@ $$
 F(A, \mu \cdot B) = F(\mu \cdot A, B) = \mu \cdot F(A, B).
 $$
 
+_note: in the challenge the pairing isn't in $\mathbb{R}$ but the logic stay the same_
+
 So using this property:
 
 ```py
