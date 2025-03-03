@@ -8,8 +8,12 @@ Some of my published Articles & Write-Ups
 
 ## Write-Up
 
-- PwnMe 2025 - Author Solution - Crypto
+- PwnMe 2025 - **Author Solution** - Crypto
   - [HTML Preview](https://htmlpreview.github.io/?https://gist.githubusercontent.com/Ectario/a58decf0476108ec5d157593f8e77550/raw/155e812e137a3653d0ebedca53e54ea75fffc31f/vending_machine.html)
   - [HTML code for local preview (better imo)](./WriteUps/VendingMachine/Write_Up_Vending_Machine.html)
   - [PDF (kinda ugly)](./WriteUps/VendingMachine/Write_Up_Vending_Machine.pdf)
 - [RealWorld 2023/24 - Crypto](./WriteUps/OKPROOF/WU.md)
+- Beginner friendly challs - **Author Solution** - Crypto
+  - [EntryLevel RSA](./WriteUps/2600-training/Intro_crypto_with_RSA/writeup.pdf)
+  - [Lifting Secrets](./WriteUps/2600-training/lifting_secrets/writeup.pdf)
+  - [Triple Curves](./WriteUps/2600-training/triple_curves/writeup.pdf)
