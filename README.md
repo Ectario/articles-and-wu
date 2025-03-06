@@ -5,8 +5,11 @@ _Difficulty is determined by summing the values: 🟩 = 1/5, 🟨 = 1/10, ⬜ = 
 
 ## Articles
 
-- 🟩🟩🟨⬜⬜ [GreHack 2024 - Reverse & Crypto](https://fuzzinglabs.com/casting-reverse-challenge-into-cryptanalysis-challenge/)
-- 🟩🟩🟨⬜⬜ [HTB University CTF 2024 - Blockchain](NOT_PUBLISHED_YET)
+- GreHack 2024 - Reverse & Crypto
+  - 🟩🟩🟨⬜⬜ [Article - FuzzingLabs](https://fuzzinglabs.com/casting-reverse-challenge-into-cryptanalysis-challenge/)
+
+- HTB University CTF 2024 - Blockchain
+  - 🟩🟩🟨⬜⬜ [Article - FuzzingLabs](https://fuzzinglabs.com/htb-university-stargazer-writeup/)
 
 ## Write-Ups
 
