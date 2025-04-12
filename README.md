@@ -25,3 +25,9 @@ _Difficulty is determined by summing the values: 🟩 = 1/5, 🟨 = 1/10, ⬜ = 
   - 🟨⬜⬜⬜⬜ [EntryLevel RSA](./WriteUps/2600-training/Intro_crypto_with_RSA/writeup.pdf)
   - 🟩⬜⬜⬜⬜ [Lifting Secrets](./WriteUps/2600-training/lifting_secrets/writeup.pdf)
   - 🟩🟨⬜⬜⬜ [Triple Curves](./WriteUps/2600-training/triple_curves/writeup.pdf)
+
+- PwnMe 2025 Final - **Author Solution** - Crypto 
+  - 🟩🟩🟨⬜⬜ [LWSCLWE](./WriteUps/LWSCLWE/Write-Up_LWSCLWE.pdf)
+
+- PwnMe 2025 Final - **Author Solution** - Blockchain 
+  - 🟩🟩🟩🟩🟨 [FullchainThem](./WriteUps/FullchainThem/Write-Up_FullchainThem.md)
