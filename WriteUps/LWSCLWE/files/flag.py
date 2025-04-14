@@ -1,0 +1,1 @@
+FLAG = "PWNME{b@d_id3a_to_make_ur_own_CrYPToGraPHic_Sch3me}"

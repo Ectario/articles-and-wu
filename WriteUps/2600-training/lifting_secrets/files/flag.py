@@ -1,0 +1,1 @@
+FLAG = b"3C{bad_impl___Small_ring_small_security}"
