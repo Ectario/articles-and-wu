@@ -27,7 +27,7 @@ _Difficulty is determined by summing the values: 🟩 = 1/5, 🟨 = 1/10, ⬜ = 
   - 🟩🟨⬜⬜⬜ [Triple Curves](./WriteUps/2600-training/triple_curves/writeup.pdf)
 
 - PwnMe 2025 Final - **Author Solution** - Crypto 
-  - 🟩🟩🟨⬜⬜ [LWSCLWE](./WriteUps/LWSCLWE/Write-Up_LWSCLWE.pdf)
+  - 🟩🟩🟨⬜⬜ [LWSCLWE](https://www.notion.so/Write-Up-LWSCLWE-Ectario-1b0abf8fab958095ae7fce43563a8e7d)
 
 - PwnMe 2025 Final - **Author Solution** - Blockchain 
   - 🟩🟩🟩🟩🟨 [FullchainThem](./WriteUps/FullchainThem/Write-Up_FullchainThem.md)
