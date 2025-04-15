@@ -13,6 +13,8 @@ _Difficulty is determined by summing the values: 🟩 = 1/5, 🟨 = 1/10, ⬜ = 
 
 ## Write-Ups
 
+_(For the challenges I created, the sources can be found in the corresponding challenge folder within the WriteUps directory)_
+
 - RealWorld 2023/24 - Crypto
   - 🟩🟩🟩🟨⬜ [Write-Up](./WriteUps/OKPROOF/WU.md)
 
