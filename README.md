@@ -18,6 +18,9 @@ _(For the challenges I created, those with _"Author Solution"_ mentionned, the s
 - RealWorld 2023/24 - Crypto
   - 🟩🟩🟩🟨⬜ [Write-Up](./WriteUps/OKPROOF/WU.md)
 
+- bi0s CTF 2025 - Blockchain
+  - 🟩🟩🟩🟨⬜ [Empty Vessel](./WriteUps/bi0s2025/empty-vessel/README.md)
+
 - PwnMe 2025 Quals - **Author Solution** - Crypto 
   - 🟩🟩🟩🟩⬜ [HTML Preview](https://htmlpreview.github.io/?https://gist.githubusercontent.com/Ectario/a58decf0476108ec5d157593f8e77550/raw/155e812e137a3653d0ebedca53e54ea75fffc31f/vending_machine.html)
   - [HTML code for local preview (better imo)](./WriteUps/VendingMachine/Write_Up_Vending_Machine.html)
