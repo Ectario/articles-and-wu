@@ -210,7 +210,7 @@ Now let’s weaponize it.
 
 ### My first baaaad idea
 
-At first, I thought I could get clever and mess with the `calldata` manually—like literally crafting a fake `receivers.length` that’s huge, so I could underflow the multiplication check in `batchTransfer()`. The idea was: keep `amount` small, and abuse the overflow on `amount * length` to make it pass the balance check. But realistically? That’s just a one-way trip to **out-of-gas hell**, especially if you're looping through a massive array.
+At first, I thought I could get clever and mess with the `calldata` manually—like literally crafting a fake first 32 bytes of receivers, representing `receivers.length`, that is huge, so I could underflow the multiplication check in `batchTransfer()`. The idea was: keep `amount` small, and abuse the overflow on `amount * length` to make it pass the balance check. But realistically? That’s just a one-way trip to **out-of-gas hell**, especially if you're looping through a massive array.
 
 ### Second thought
 
