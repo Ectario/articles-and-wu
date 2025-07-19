@@ -379,7 +379,7 @@ Sequence of events:
 1. `withdraw` sees `balanceOf[player]` high enough, sends `amount` ether and only <5000 gas (explained in previous point).
 2. Fallback triggers `transfer(address(0),1)` which **reduces** our arena balance by one while still inside the external call (both address 0 and our balance slots are warmed).
 3. Control returns to `withdraw`; it executes the unchecked subtraction using the *already-decremented* balance.
-4. Result underflows to `(balance - 1) - amount`, because asked `amount` was `balance`. Our balance is now effectively max-uint.
+4. Result underflows to `(balance - 1) - amount`, because asked we `amount` was `balance`. Our balance is now effectively max-uint.
 5. A second call to `withdraw` with `address(arena).balance` as the parameter empties the contract, easily pushing the EOA over the 500-ETH win line.
 
 ### Putting it all together
