@@ -315,7 +315,7 @@ Foundry’s `vm.signDelegation + vm.attachDelegation` pair is a one-shot simulat
 *The same two calls could be reproduced on-chain by submitting an **Intent** tx, but cheat-codes are faster for local PoC.*
 
 * Agent side
-  * An off-line key signs a delegation that lets the 99-byte `MyAgent` run whenever that EOA sends a tx. (But we need to take care that this implementation's **address** doesn't contains byte excluded by the Jail, since following [7702 eip](https://eips.ethereum.org/EIPS/eip-7702#abstract) it does have the implementation address in the bytecode `For each tuple, a delegation indicator (0xef0100 || address) is written to the authorizing account’s code.`).
+  * An off-line key signs a delegation that lets `MyAgent` run whenever that EOA sends a tx. (But we need to take care that this implementation's **address** doesn't contains byte excluded by the Jail, since following [7702 eip](https://eips.ethereum.org/EIPS/eip-7702#abstract) it does have the implementation address in the bytecode `For each tuple, a delegation indicator (0xef0100 || address) is written to the authorizing account’s code.`).
   * This keeps `tx.origin == msg.sender` true while still giving us contract logic during battles.
 
 * Player side
