@@ -7,7 +7,7 @@
 ### Deployment and win condition
 
 A freshly deployed `Challenge` pours 500 ETH into a brand-new `Arena`, keeps 10 ETH for itself, sends the rest to an admin EOA named `system`, then hands arena ownership to that same address.
-The solver’s job (which only have 8 ether) is dead simple: finish a transaction with more than 500 ETH on your EOA so this check flips true:
+The solver’s job (which only has 8 ether) is dead simple: finish a transaction with more than 500 ETH on your EOA so this check flips true:
 
 ```solidity
 return address(msg.sender).balance > 500 ether;
@@ -93,7 +93,7 @@ Those quirks make `withdraw` the most tempting place to poke around.
 
 ## First idea: "Static-call proxy? sounds cool"
 
-I spent a solid chunk of the CTF chasing what looked like a clean bypass for the agent jail.
+I spent a solid chunk of the CTF chasing what looked like a clean bypass for the agent jail (needed to gather more than 10 ether and use withdraw method).
 The thought process:
 * `register` only inspects the **runtime** of the agent you submit
   * must be `< 100` bytes
@@ -134,7 +134,7 @@ Gettin' the bytecode: `solc MyAgent.yul --optimize --optimize-yul --strict-assem
 
 ### Where it blew up
 
-Static calls are read-only by definition. The moment my implementation tried to touch storage the EVM screamed `StateChangeDuringStaticCall` and reverted (and thus, can't call the `?random()` from `Randomness`). This is the unit test I wrote, it's kinda explicit:
+Static calls are read-only by definition. The moment my implementation tried to touch storage the EVM screamed `StateChangeDuringStaticCall` and reverted (and thus, can't call the `.random()` from `Randomness`). This is the unit test I wrote, it's kinda explicit:
 
 ```solidity
 // SPDX-License-Identifier: UNLICENSED
@@ -295,7 +295,7 @@ In other words: yes, the proxy compiles, deploys, and answers pure/view queries,
 >
 > * keep the runtime under 100 bytes so the jail smiles
 > * let `staticcall` handle `tick` invocations (cheap, read-only)
-> * switch to a normal `call` only for `acceptBattle`, grab the fresh seed from `Randomness.random()`, then pre-compute every future roll off-chain and hard-code my answers during each `tick`.
+> * switch to a normal `call` only for `acceptBattle`, grab the fresh seed from `Randomness.random()`, then pre-compute every future roll and use it during each `tick`.
 >
 > But for the last point (and because of the jail with `call`), I also explored some niche strategies to sneak around the jail:
 > 
