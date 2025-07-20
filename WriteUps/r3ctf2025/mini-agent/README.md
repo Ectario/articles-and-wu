@@ -7,7 +7,7 @@
 ### Deployment and win condition
 
 A freshly deployed `Challenge` pours 500 ETH into a brand-new `Arena`, keeps 10 ETH for itself, sends the rest to an admin EOA named `system`, then hands arena ownership to that same address.
-The solver’s job is dead simple: finish a transaction with more than 500 ETH on your EOA so this check flips true:
+The solver’s job (which only have 8 ether) is dead simple: finish a transaction with more than 500 ETH on your EOA so this check flips true:
 
 ```solidity
 return address(msg.sender).balance > 500 ether;
