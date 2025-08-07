@@ -11,6 +11,9 @@ _Difficulty is determined by summing the values: 🟩 = 1/5, 🟨 = 1/10, ⬜ = 
 - HTB University CTF 2024 - Blockchain
   - 🟩🟩🟨⬜⬜ [Article - FuzzingLabs](https://fuzzinglabs.com/htb-university-stargazer-writeup/)
 
+- r3kapig CTF 2025 - Blockchain
+  - 🟩🟩🟩🟩🟨 [Article - Valgrind](https://www.valgrindc.tf/posts/mini-agent/)
+
 ## Write-Ups
 
 _(For the challenges I created, those with _"Author Solution"_ mentionned, the sources can be found in the corresponding challenge folder within the WriteUps directory)_
