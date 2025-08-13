@@ -14,6 +14,9 @@ _Difficulty is determined by summing the values: 🟩 = 1/5, 🟨 = 1/10, ⬜ = 
 - r3kapig CTF 2025 - Blockchain
   - 🟩🟩🟩🟩🟨 [Article - Valgrind](https://www.valgrindc.tf/posts/mini-agent/)
 
+- sol-azy, a tool with @FuzzingLabs - sBPF reverse & Solana SAST
+  - 🟩🟩🟨⬜⬜ [Article - Fuzzinglabs](https://fuzzinglabs.com/introducing-solazy-tool/)
+
 ## Write-Ups
 
 _(For the challenges I created, those with _"Author Solution"_ mentionned, the sources can be found in the corresponding challenge folder within the WriteUps directory)_
