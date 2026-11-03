@@ -1,3 +1,14 @@
+> [!IMPORTANT]
+> **Repository Archived — Content Migrated**
+>
+> This repository has been archived and is no longer maintained.
+>
+> All articles, technical write-ups, and research content have been migrated to my personal website, which now serves as the **official and up-to-date source** for all publications.
+>
+> **New home:** [https://ectario.github.io/](https://ectario.github.io/)
+>
+> This repository remains publicly available for historical and reference purposes. All future publications, updates, and corrections will be made exclusively on the website.
+
 # articles-and-wu
 Some of my published Articles & Write-Ups
 
